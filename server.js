@@ -68,6 +68,8 @@ app.get('/gifs/:id', async (req,res)=>{
 })
 
 
-app.listen(PORT, ()=>{
+const server = app.listen(PORT, ()=>{
     console.log(`Yo we listening on ${PORT} homie`)
 })
+
+module.exports = {app, server}
